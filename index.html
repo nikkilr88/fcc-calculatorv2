@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Calculator V2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <i class="fa fa-question-circle"></i>
+
+   <div id="about">
+  <h3>Calculator V2</h3>
+  <p>An advanced FCC project</p>
+  <ul>
+    <p>Keyboard Shortcuts:</p>
+    <li><strong>Enter</strong> calculate expression </li>
+    <li><strong>C</strong> clear display</li>
+  </ul>
+  <p><small>Coded with <i class="fa fa-heart"></i> by Nikki L.R.</small></p>
+</div>
+
+    <div id="cal-container">
+        <form id="cal">
+            <input type="text" id="display" placeholder="0" />
+
+            <section id="buttons">
+                <input type="button" value="(" id="op" onclick="cal.display.value+='('" />
+                <input type="button" value=")" id="op" onclick="cal.display.value+=')'" />
+                <input type="button" value="%" id="op" onclick="cal.display.value+='%'" />
+                <input type="reset" value="AC" id="ac" />
+
+                <input type="button" value="7" onclick="cal.display.value+='7'" />
+                <input type="button" value="8" onclick="cal.display.value+='8'" />
+                <input type="button" value="9" onclick="cal.display.value+='9'" />
+                <input type="button" value="÷" id="op" onclick="cal.display.value+='/'" />
+
+                <input type="button" value="4" onclick="cal.display.value+='4'" />
+                <input type="button" value="5" onclick="cal.display.value+='5'" />
+                <input type="button" value="6" onclick="cal.display.value+='6'" />
+                <input type="button" value="×" id="op" onclick="cal.display.value+='*'" />
+
+                <input type="button" value="1" onclick="cal.display.value+='1'" />
+                <input type="button" value="2" onclick="cal.display.value+='2'" />
+                <input type="button" value="3" onclick="cal.display.value+='3'" />
+                <input type="button" value="-" id="op" onclick="cal.display.value+='4'" />
+
+                <input type="button" value="0" onclick="cal.display.value+='0'" />
+                <input type="button" value="." onclick="cal.display.value+='.'" />
+                <input type="button" value="=" id="submit" onclick="cal.display.value = eval(cal.display.value)" />
+                <input type="button" value="+" id="op" onclick="cal.display.value+='+'" />
+            </section>
+        </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

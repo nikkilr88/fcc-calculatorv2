@@ -1,0 +1,139 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #4b4b4b;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+.fa-question-circle:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.fa-question-circle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #f1f1f1;
+  font-size: 20px;
+  opacity: 0.15;
+  transition: all 0.3s;
+}
+
+#about {
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 300px;
+  font-size: 14px;
+  background: #f1f1f1;
+  color: #2b2b2b;
+  text-align: center;
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+#about ul {
+  padding: 0;
+  margin: 0;
+}
+
+#cal-container {
+  margin: 70px auto 0 auto;
+  border: 1px solid #555;
+  max-width: 450px;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 75px;
+  border: none;
+  background: #555;
+  color: #f1f1f1;
+  text-align: right;
+  padding-right: 15px;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+  outline: none;
+}
+
+input[type="button"], input[type="reset"] {
+  height: 50px;
+  width: 22%;
+  float: left;
+  margin: 1.5%;
+  border: none;
+  color: #f1f1f1;
+  background: #4b4b4b;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+#ac {
+  color: #f27979;
+}
+
+@media only screen and (max-width: 450px) {
+  .fa-question-circle {
+    display: none;
+  }
+
+  #cal-container {
+    margin: 0;
+    height: 100vh;
+    border: none;
+  }
+
+  #cal {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+
+  #buttons {
+    background: blue;
+    height: 100%;
+    display: table-row;
+  }
+
+  input[type="text"] {
+    height: 100px;
+    display: table-row;
+    background: white;
+    color: #444;
+  }
+
+  input[type="button"], input[type="reset"] {
+    width: 25%;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #888;
+    display: table-cell;
+  }
+
+  #op {
+    background: #444;
+    color: whitesmoke;
+  }
+
+  #ac {
+    background: #444; /*f27979*/
+  }
+}
