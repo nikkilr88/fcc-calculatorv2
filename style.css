@@ -109,7 +109,6 @@ input[type="button"], input[type="reset"] {
   }
 
   #buttons {
-    background: blue;
     height: 100%;
     display: table-row;
   }
