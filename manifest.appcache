@@ -1,7 +1,13 @@
 CACHE MANIFEST
 # 2017-09-18:v1
 
-CACHE:
 index.html
 script.js
 style.css
+lib/font-awesome-4.7.0/css/font-awesome.css
+lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0
+lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0
+lib/font-awesome-4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0
+lib/font-awesome-4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0
+lib/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0
+lib/font-awesome-4.7.0/fonts/FontAwesome.otf?v=4.7.0
