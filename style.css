@@ -86,6 +86,8 @@ input[type="button"], input[type="reset"] {
   background: #4b4b4b;
   font-size: 1.1rem;
   box-sizing: border-box;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 #ac {
