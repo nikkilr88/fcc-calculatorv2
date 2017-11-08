@@ -73,10 +73,9 @@ h3 {
 }
 
 input[type="button"] {
-  height: 50px;
-  width: 22%;
+  height: 60px;
+  width: 25%;
   float: left;
-  margin: 1.5%;
   border: none;
   color: #f1f1f1;
   background: #4b4b4b;
@@ -128,7 +127,6 @@ input[type="button"] {
   input[type="reset"] {
     width: 25%;
     height: 20%;
-    margin: 0;
     padding: 0;
     background: #fff;
     color: #888;
