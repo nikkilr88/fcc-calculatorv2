@@ -137,7 +137,7 @@ input[type="button"], input[type="reset"] {
     display: table-cell;
   }
 
-  #op {
+  .op {
     background: #444;
     color: whitesmoke;
   }
