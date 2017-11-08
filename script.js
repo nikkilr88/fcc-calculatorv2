@@ -1,8 +1,10 @@
-var calDisplay = document.querySelector("#display");
+document.addEventListener('DOMContentLoaded', function(e){
+  var calDisplay = document.querySelector("#display");
 var equalsBtn = document.querySelector("#submit");
 var clearBtn = document.querySelector("#ac");
 var aboutBox = document.querySelector("#about");
 var aboutIcon = document.querySelector(".fa-question-circle");
+var btn = document.querySelectorAll("input[type='button']");
 
 //Keydown functions
 calDisplay.addEventListener("keydown", function(e) {
@@ -34,4 +36,6 @@ document.addEventListener("click", function(e){
   if(!isClickInside && !isIconClick) {
     aboutBox.style.display = "none";
   }
+});
+  
 });

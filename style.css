@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -57,7 +58,7 @@ li {
   box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"] {
+#display {
   width: 100%;
   height: 75px;
   border: none;
@@ -68,15 +69,13 @@ input[type="text"] {
   letter-spacing: 1px;
   font-size: 1.2rem;
   box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-input[type="text"]:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus {
-  outline: none;
-}
-
-input[type="button"], input[type="reset"] {
+input[type="button"],
+input[type="reset"] {
   height: 50px;
   width: 22%;
   float: left;
@@ -109,7 +108,7 @@ input[type="button"], input[type="reset"] {
 
   #cal {
     display: table;
-    max-height: 100vh;
+    min-height: 100vh;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -120,14 +119,14 @@ input[type="button"], input[type="reset"] {
     display: table-row;
   }
 
-  input[type="text"] {
+  #display {
     height: 100px;
-    display: table-row;
     background: white;
     color: #444;
   }
 
-  input[type="button"], input[type="reset"] {
+  input[type="button"],
+  input[type="reset"] {
     width: 25%;
     height: 20%;
     margin: 0;
@@ -137,12 +136,13 @@ input[type="button"], input[type="reset"] {
     display: table-cell;
   }
 
-  #op {
-    background: #444;
-    color: whitesmoke;
+  .op {
+    background: #444 !important;
+    color: whitesmoke !important;
   }
 
   #ac {
-    background: #444; /*f27979*/
+    background: #444 !important;
+    /*f27979*/
   }
 }
