@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html manifest="">
-
+<html>
 <head>
     <title>Calculator V2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,11 +17,6 @@
    <div id="about">
   <h3>Calculator V2</h3>
   <p>An advanced FCC project</p>
-  <ul>
-    <p>Keyboard Shortcuts:</p>
-    <li><strong>Enter</strong> calculate expression </li>
-    <li><strong>C</strong> clear display</li>
-  </ul>
   <p><strong>Available offline!</strong></p>
   <p><small>Coded with <i class="fa fa-heart"></i> by Nikki L.R.</small></p>
 </div>
@@ -33,11 +27,10 @@
             <div id="display">0</div>
 
             <section id="buttons">
-                
                 <input type="button" value="(" class="op"/>
                 <input type="button" value=")" class="op" />
                 <input type="button" value="%" class="op" />
-                <input type="reset" value="AC" id="ac" />
+                <input type="button" value="AC" id="ac" />
 
                 <input type="button" value="7" class="btn" />
                 <input type="button" value="8" class="btn" />
@@ -58,11 +51,11 @@
                 <input type="button" value="." class="btn" />
                 <input type="button" value="=" id="submit" />
                 <input type="button" value="+" class="op" />
-                
             </section>
         </div>
     </div>
     
+    <!--LOAD LOCAL SCRIPTS-->
     <script type="text/javascript" src="script.js"></script>
 </body>
 
