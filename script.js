@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(e) {
   
   var calDisplay = document.querySelector("#display");
-  var equalsBtn = document.querySelector("#submit");
-  var clearBtn = document.querySelector("#ac");
   var aboutBox = document.querySelector("#about");
   var aboutIcon = document.querySelector(".fa-question-circle");
   var buttons = document.querySelectorAll("input[type='button']");
@@ -42,6 +40,13 @@ document.addEventListener('DOMContentLoaded', function(e) {
       calDisplay.innerHTML = '0';
       return;
     }
+    //Replace operators
+    else if(val === '×') {
+      val = '*';
+    }
+    else if(val === '÷') {
+      val = '/';
+    }
     //Evaluate equation if no errors
     else if(val === '=') {
       try {
@@ -52,13 +57,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
         calDisplay.innerHTML = 'Error';
         return;
       }
-    }
-    //Replace operators
-    else if(val === '×') {
-      val = '*';
-    }
-    else if(val === '÷') {
-      val = '/';
     }
     
     calDisplay.innerHTML += val;
